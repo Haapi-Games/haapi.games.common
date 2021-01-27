@@ -118,7 +118,7 @@ def mypy(session: Session) -> None:
     Args:
         session: The Session object.
     """
-    args = session.posargs or ["src", "tests", "docs/conf.py"]
+    args = session.posargs or ["src/haapi/games", "tests", "docs/conf.py"]
     session.install(".")
     session.install("mypy", "pytest")
     session.run("mypy", *args)
@@ -183,7 +183,10 @@ def xdoctest(session: Session) -> None:
     args = session.posargs or ["all"]
     session.install(".")
     session.install("xdoctest[colors]")
-    session.run("python", "-m", "xdoctest", package, *args)
+    # I cannot get this to run correctly with the installed package even with checking
+    # the package installation multiple times
+    # session.run("python", "-m", "xdoctest", package, *args)
+    session.run("python", "-m", "xdoctest", f"src/{package.replace('.', '/')}", *args)
 
 
 @nox.session(name="docs-build", python="3.8")
