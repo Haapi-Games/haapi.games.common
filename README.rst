@@ -55,12 +55,6 @@ You can install *Haapi Games Common* via pip_ from PyPI_:
    $ pip install haapi.games.common
 
 
-Usage
------
-
-Please see the `Command-line Reference <Usage_>`_ for details.
-
-
 Contributing
 ------------
 
