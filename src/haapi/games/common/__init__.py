@@ -1,0 +1,1 @@
+"""Haapi Games Common."""

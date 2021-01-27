@@ -1,0 +1,71 @@
+version: v1
+
+labels:
+  - label: "build"
+    matcher:
+      title: "^build: .*"
+      commits: "^build: .*"
+
+  - label: "ci"
+    matcher:
+      title: "^ci: .*"
+      commits: "^ci: .*"
+
+  - label: "docs"
+    matcher:
+      title: "^docs: .*"
+      commits: "^docs: .*"
+
+  - label: "feat"
+    matcher:
+      title: "^feat: .*"
+      commits: "^feat: .*"
+
+  - label: "bug"
+    matcher:
+      title: "^fix: .*"
+      commits: "^fix: .*"
+
+  - label: "perf"
+    matcher:
+      title: "^perf: .*"
+      commits: "^perf: .*"
+
+  - label: "refactor"
+    matcher:
+      title: "^refactor: .*"
+      commits: "^refactor: .*"
+
+  - label: "style"
+    matcher:
+      title: "^style: .*"
+      commits: "^style: .*"
+
+  - label: "test"
+    matcher:
+      title: "^test: .*"
+      commits: "^test: .*"
+
+  - label: "breaking"
+    matcher:
+      title: ".*!: .*"
+      commits: ".*!: .*"
+      body: "(\\n|.)*BREAKING( CHANGE|-CHANGE).*"
+
+checks:
+  - context: "Semantic Pull Request"
+    url: "https://github.com/Haapi-Games/haap.games.common/blob/main/.github/pr-labeler.yml"
+    description:
+      success: Ready for review & merge.
+      failure: Missing semantic label for merge.
+    labels:
+      any:
+        - build
+        - ci
+        - docs
+        - feat
+        - bug
+        - perf
+        - refactor
+        - style
+        - breaking

@@ -1,0 +1,12 @@
+on:
+  issue_comment:
+    types: [created, edited]
+
+jobs:
+  labeler:
+    name: Labeler
+    runs-on: ubuntu-latest
+    steps:
+      - uses: fuxingloh/multi-labeler@v1
+        with:
+          config-path: .github/comment-labeler.yml

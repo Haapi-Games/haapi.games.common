@@ -1,0 +1,10 @@
+version: v1
+
+labels:
+  - label: "coverage"
+    matcher:
+      comment: "# \\[Codecov\\] .*"
+
+  - label: "stale"
+    matcher:
+      comment: "/stale"
