@@ -22,7 +22,7 @@ Haapi Games Common
 .. |Tests| image:: https://github.com/Haapi-Games/haapi.games.common/workflows/Tests/badge.svg
    :target: https://github.com/Haapi-Games/haapi.games.common/actions?workflow=Tests
    :alt: Tests
-.. |Codecov| image:: https://codecov.io/gh/Haapi-Games/haapi.games.common/branch/master/graph/badge.svg
+.. |Codecov| image:: https://codecov.io/gh/Haapi-Games/haapi.games.common/branch/main/graph/badge.svg
    :target: https://codecov.io/gh/Haapi-Games/haapi.games.common
    :alt: Codecov
 .. |pre-commit| image:: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
