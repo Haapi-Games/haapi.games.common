@@ -117,14 +117,18 @@ def mypy(session: Session) -> None:
     Args:
         session: The Session object.
     """
-    args = session.posargs or ["src/haapi/games", "tests", "docs/conf.py"]
+    args = session.posargs or [
+        "--explicit-package-bases",
+        "src/haapi/games",
+        "tests",
+        "docs/conf.py",
+    ]
     session.install(".")
-    session.install("mypy", "pytest")
+    session.install("mypy", "pytest", "pytest-mock")
     session.run("mypy", *args)
     if not session.posargs:
         session.run(
             "mypy",
-            "--namespace-packages",
             f"--python-executable={sys.executable}",
             "noxfile.py",
         )
@@ -173,7 +177,7 @@ def typeguard(session: Session) -> None:
         session: The Session object.
     """
     session.install(".")
-    session.install("pytest", "typeguard", "pygments")
+    session.install("pytest", "pytest-mock", "typeguard", "pygments")
     session.run("pytest", f"--typeguard-packages={package}", *session.posargs)
 
 
