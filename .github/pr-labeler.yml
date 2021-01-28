@@ -3,48 +3,48 @@ version: v1
 labels:
   - label: "build"
     matcher:
-      title: "^build: .*"
-      commits: "^build: .*"
+      title: "^build(\\(.*\\))?!?: .*"
+      commits: "^build(\\(.*\\))?!?: .*"
 
   - label: "ci"
     matcher:
-      title: "^ci: .*"
-      commits: "^ci: .*"
+      title: "^ci(\\(.*\\))?!?: .*"
+      commits: "^ci(\\(.*\\))?!?: .*"
 
   - label: "docs"
     matcher:
-      title: "^docs: .*"
-      commits: "^docs: .*"
+      title: "^docs(\\(.*\\))?!?: .*"
+      commits: "^docs(\\(.*\\))?!?: .*"
 
   - label: "feat"
     matcher:
-      title: "^feat: .*"
-      commits: "^feat: .*"
+      title: "^feat(\\(.*\\))?!?: .*"
+      commits: "^feat(\\(.*\\))?!?: .*"
 
   - label: "bug"
     matcher:
-      title: "^fix: .*"
-      commits: "^fix: .*"
+      title: "^fix(\\(.*\\))?!?: .*"
+      commits: "^fix(\\(.*\\))?!?: .*"
 
   - label: "perf"
     matcher:
-      title: "^perf: .*"
-      commits: "^perf: .*"
+      title: "^perf(\\(.*\\))?!?: .*"
+      commits: "^perf(\\(.*\\))?!?: .*"
 
   - label: "refactor"
     matcher:
-      title: "^refactor: .*"
-      commits: "^refactor: .*"
+      title: "^refactor(\\(.*\\))?!?: .*"
+      commits: "^refactor(\\(.*\\))?!?: .*"
 
   - label: "style"
     matcher:
-      title: "^style: .*"
-      commits: "^style: .*"
+      title: "^style(\\(.*\\))?!?: .*"
+      commits: "^style(\\(.*\\))?!?: .*"
 
   - label: "test"
     matcher:
-      title: "^test: .*"
-      commits: "^test: .*"
+      title: "^test(\\(.*\\))?!?: .*"
+      commits: "^test(\\(.*\\))?!?: .*"
 
   - label: "breaking"
     matcher:
