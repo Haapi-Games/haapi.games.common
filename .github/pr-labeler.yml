@@ -54,7 +54,7 @@ labels:
 
 checks:
   - context: "Semantic Pull Request"
-    url: "https://github.com/Haapi-Games/haap.games.common/blob/main/.github/pr-labeler.yml"
+    url: "https://github.com/Haapi-Games/haapi.games.common/blob/main/.github/pr-labeler.yml"
     description:
       success: Ready for review & merge.
       failure: Missing semantic label for merge.
