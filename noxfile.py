@@ -92,7 +92,6 @@ def precommit(session: Session) -> None:
         "pep8-naming",
         "pre-commit",
         "pre-commit-hooks",
-        "reorder-python-imports",
     )
     session.run("pre-commit", *args)
     if args and args[0] == "install":
@@ -123,7 +122,12 @@ def mypy(session: Session) -> None:
     session.install("mypy", "pytest")
     session.run("mypy", *args)
     if not session.posargs:
-        session.run("mypy", f"--python-executable={sys.executable}", "noxfile.py")
+        session.run(
+            "mypy",
+            "--namespace-packages",
+            f"--python-executable={sys.executable}",
+            "noxfile.py",
+        )
 
 
 @nox.session(python=python_versions)
@@ -134,7 +138,7 @@ def tests(session: Session) -> None:
         session: The Session object.
     """
     session.install(".")
-    session.install("coverage[toml]", "pytest", "pygments")
+    session.install("coverage[toml]", "pytest", "pytest-mock", "pygments")
     try:
         session.run("coverage", "run", "--parallel", "-m", "pytest", *session.posargs)
     finally:
