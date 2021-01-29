@@ -14,7 +14,7 @@ Here is a list of important resources for contributors:
 
 .. _MIT license: https://opensource.org/licenses/MIT
 .. _Source Code: https://github.com/Haapi-Games/haapi.games.common
-.. _Documentation: https://haapi.games.common.readthedocs.io/
+.. _Documentation: https://haapigamescommon.readthedocs.io/
 .. _Issue Tracker: https://github.com/Haapi-Games/haapi.games.common/issues
 
 How to report a bug
