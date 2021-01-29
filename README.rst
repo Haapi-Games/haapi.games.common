@@ -36,13 +36,13 @@ Haapi Games Common
 Features
 --------
 
-* TODO
+* Generic ``get_config`` function for projects
 
 
 Requirements
 ------------
 
-* TODO
+* Python>3.6.1
 
 
 Installation

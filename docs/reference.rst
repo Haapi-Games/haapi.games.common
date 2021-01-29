@@ -6,8 +6,8 @@ Reference
     :backlinks: none
 
 
-haapi.games.common.__main__
+haapi.games.common.__init__
 ---------------------------
 
-.. automodule:: haapi.games.common.__main__
+.. automodule:: haapi.games.common.__init__
    :members:
