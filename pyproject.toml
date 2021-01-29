@@ -7,7 +7,7 @@ license = "MIT"
 readme = "README.rst"
 homepage = "https://github.com/Haapi-Games/haapi.games.common"
 repository = "https://github.com/Haapi-Games/haapi.games.common"
-documentation = "https://haapi.games.common.readthedocs.io"
+documentation = "https://haapigamescommon.readthedocs.io"
 packages = [
   { include = "haapi", from = "src" }
 ]
