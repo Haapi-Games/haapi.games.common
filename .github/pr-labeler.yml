@@ -52,10 +52,10 @@ labels:
       commits: ".*!: .*"
       body: "(\\n|.)*BREAKING( CHANGE|-CHANGE).*"
 
-  - label: "test"
+  - label: "skip-changelog"
     matcher:
-      title: "^test(\\(.*\\))?!?: .*"
-      commits: "^test(\\(.*\\))?!?: .*"
+      title: "^skip(\\(.*\\))?!?: .*"
+      commits: "^skip(\\(.*\\))?!?: .*"
 
 checks:
   - context: "Semantic Pull Request"
