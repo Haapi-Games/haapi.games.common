@@ -52,6 +52,11 @@ labels:
       commits: ".*!: .*"
       body: "(\\n|.)*BREAKING( CHANGE|-CHANGE).*"
 
+  - label: "test"
+    matcher:
+      title: "^test(\\(.*\\))?!?: .*"
+      commits: "^test(\\(.*\\))?!?: .*"
+
 checks:
   - context: "Semantic Pull Request"
     url: "https://github.com/Haapi-Games/haapi.games.common/blob/main/.github/pr-labeler.yml"

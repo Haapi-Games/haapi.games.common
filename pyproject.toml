@@ -17,6 +17,7 @@ classifiers = [
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
 ]
+include = ["LICENSE.rst"]
 
 [tool.poetry.urls]
 Changelog = "https://github.com/Haapi-Games/haapi.games.common/releases"
