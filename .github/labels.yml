@@ -66,4 +66,4 @@
   color: ffffff
 - name: skip-changelog
   description: This will not be included in the changelog
-  color: 000000
+  color: 4E4C58
