@@ -16,9 +16,9 @@ Haapi Games Common
 .. |License| image:: https://img.shields.io/pypi/l/haapi.games.common
    :target: https://opensource.org/licenses/MIT
    :alt: License
-.. |Read the Docs| image:: https://img.shields.io/readthedocs/haapi.games.common/latest.svg?label=Read%20the%20Docs
-   :target: https://haapi.games.common.readthedocs.io/
-   :alt: Read the documentation at https://haapi.games.common.readthedocs.io/
+.. |Read the Docs| image:: https://img.shields.io/readthedocs/haapigamescommon/latest.svg?label=Read%20the%20Docs
+   :target: https://haapigamescommon.readthedocs.io/
+   :alt: Read the documentation at https://haapigamescommon.readthedocs.io/
 .. |Tests| image:: https://github.com/Haapi-Games/haapi.games.common/workflows/Tests/badge.svg
    :target: https://github.com/Haapi-Games/haapi.games.common/actions?workflow=Tests
    :alt: Tests
@@ -91,4 +91,4 @@ This project was generated from `@cjolowicz`_'s `Hypermodern Python Cookiecutter
 .. _pip: https://pip.pypa.io/
 .. github-only
 .. _Contributor Guide: CONTRIBUTING.rst
-.. _Usage: https://haapi.games.common.readthedocs.io/en/latest/usage.html
+.. _Usage: https://haapigamescommon.readthedocs.io/en/latest/usage.html
