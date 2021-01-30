@@ -37,6 +37,7 @@ Features
 --------
 
 * Generic ``get_config`` function for projects
+* Common ``SecretManager`` for GCP secrets
 
 
 Requirements

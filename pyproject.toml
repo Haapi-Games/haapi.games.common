@@ -24,6 +24,7 @@ Changelog = "https://github.com/Haapi-Games/haapi.games.common/releases"
 
 [tool.poetry.dependencies]
 python = "^3.6.1"
+google-cloud-secret-manager = "^2.2.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.2"
