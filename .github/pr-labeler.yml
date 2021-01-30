@@ -74,3 +74,4 @@ checks:
         - refactor
         - style
         - breaking
+        - skip-changelog
