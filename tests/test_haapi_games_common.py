@@ -1,11 +1,13 @@
 """Tests for haapi.games.common."""
 import os
 from typing import Dict, Any
+from unittest.mock import MagicMock
 
 import pytest
 from pytest_mock import MockFixture
 
 from haapi.games import common
+from haapi.games.common.gcp import SecretManager
 
 
 TEST_CONFIGS: Dict[str, Dict[str, Any]] = {
@@ -97,3 +99,24 @@ def test_get_environment_override(mocker: MockFixture, env_variable: str) -> Non
 
     for key, value in expected_config.items():
         assert check_config.get(key) == value
+
+
+def test_secret_manager(mocker: MockFixture) -> None:
+    """It can retrieve a secret.
+
+    Args:
+        mocker: MockFixture
+    """
+    mock_access: MagicMock = mocker.patch(
+        "google.cloud.secretmanager.SecretManagerServiceClient",
+        autospec=True,
+    )
+
+    mock_access.return_value.access_secret_version.return_value.payload.data = (
+        "random_test_secret".encode("UTF-8")
+    )
+
+    ret_val = SecretManager()._get_secret("test")
+    mock_access.assert_called_once_with()
+    mock_access.return_value.access_secret_version.assert_called_once_with(name="test")
+    assert ret_val == "random_test_secret"
