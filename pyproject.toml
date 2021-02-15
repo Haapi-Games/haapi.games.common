@@ -46,7 +46,7 @@ pep8-naming = "^0.11.1"
 darglint = "^1.5.8"
 pre-commit-hooks = "^3.3.0"
 sphinx-rtd-theme = "^0.5.1"
-Pygments = "^2.7.4"
+Pygments = "^2.8.0"
 commitizen = "^2.14.0"
 pytest-mock = "^3.5.1"
 
