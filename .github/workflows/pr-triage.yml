@@ -8,6 +8,6 @@ jobs:
     name: Labeler
     runs-on: ubuntu-latest
     steps:
-      - uses: fuxingloh/multi-labeler@v1
+      - uses: fuxingloh/multi-labeler@v1.5
         with:
           config-path: .github/pr-labeler.yml
